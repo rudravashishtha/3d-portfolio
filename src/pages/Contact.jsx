@@ -84,7 +84,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <label className="text-black-500 font-semibold">
-            Name
+            Name <span className="text-red-600">*</span>
             <input
               type="text"
               name="name"
@@ -98,7 +98,7 @@ const Contact = () => {
             />
           </label>
           <label className="text-black-500 font-semibold">
-            Email
+            Email <span className="text-red-600">*</span>
             <input
               type="email"
               name="email"
@@ -112,7 +112,7 @@ const Contact = () => {
             />
           </label>
           <label className="text-black-500 font-semibold">
-            Your Message
+            Your Message <span className="text-red-600">*</span>
             <textarea
               name="message"
               className="textarea"
